@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    background-color: rgba(53, 0, 211, 0.10);
+    color: rgb(3, 47, 99);
+}
+.container {
+    margin: 0px 0px;
+}
+
+/* стили header */
+.header {
+    background-color: rgba(255, 252, 252, 0.72);
+    height: 90px;
+    width: 100%;
+}
+
+.header-line {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.nav-item{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    margin-right: 25px; 
+    color: rgb(3, 47, 99);
+    margin-bottom: 5px;
+}
+
+.logo-item {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 280px;
+    justify-content: space-around;
+}
+
+.header-int {
+    font-weight: 700;
+    margin-right: 50px;
+    display: grid;
+    margin-top: 10px;
+}
+
+.nav-nav {
+    display: grid;
+    text-align: center;
+}
+
+/* стили footer */
+.footer-up{
+    margin-top: 300px;
+    background: rgba(255, 252, 252, 0.72);
+    height: 250px;
+    width: 100%;
+}
+
+.footer-down{
+    background: rgba(221, 221, 221, 0.5);
+    height: 20px;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.footer-map{
+    right: 30px;
+}
