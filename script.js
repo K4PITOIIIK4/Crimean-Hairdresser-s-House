@@ -27,5 +27,3 @@ controlls.forEach((e) => {
         }
     })
 })
-
-show(imageIndex);

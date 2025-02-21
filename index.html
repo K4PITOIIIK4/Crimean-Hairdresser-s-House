@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.min.js"></script>
     <title>Главная страница</title>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -42,26 +44,45 @@
         <div class="body-header">
 
         </div>
+
         <div class="slider">
-            <img class='slider-img' src="image index/1.jpg" />
-            <img class='slider-img' src="image index/2.jpg" />
-            <img class='slider-img' src="image index/3.jpg" />
-            <img class='slider-img' src="image index/4.jpg" />
-            <img class='slider-img' src="image index/5.jpg" />
-            <img class='slider-img' src="image index/6.jpg" />
+            <img class='slider-img' src="image index/new1.png" />
+            <img class='slider-img' src="image index/new2.png" />
             <div>
                 <img style='opacity: 1; height: 20px;' class="prev controlls" src="image index/left.png" alt="">
             </div>
-        
             <div>
                 <img style='opacity: 1; height: 20px;' class="next controlls" src="image index/right.png" alt="">
             </div>
+        </div>
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="image index/1.JPG"></div>
+                <div class="swiper-slide"><img src="image index/2.JPG"></div>
+                <div class="swiper-slide"><img src="image index/3.JPG"></div>
+                <div class="swiper-slide"><img src="image index/4.JPG"></div>
+                <div class="swiper-slide"><img src="image index/5.JPG"></div>
+                <div class="swiper-slide"><img src="image index/6.JPG"></div>
+            </div>
         
+            <div class="pagination"></div>
+        
+            <div class="prev">
+                <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9.2625 13.2375L3.5375 7.5L9.2625 1.7625L7.5 0L0 7.5L7.5 15L9.2625 13.2375Z" fill="#A99260" />
+                </svg>
+        
+            </div>
+            <div class="next">
+                <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.737305 13.2375L6.4623 7.5L0.737305 1.7625L2.4998 0L9.9998 7.5L2.4998 15L0.737305 13.2375Z"
+                        fill="#A99260" />
+                </svg>
+        
+            </div>
         </div>
 
-        <div class="bottom-carusel">
-
-        </div>
     </div>
 
     <div class="footer">
@@ -98,6 +119,7 @@
     </div>
 
 <script src="script.js"></script>
+<script src="script2.js"></script>
 </body>
 
 </html>
