@@ -1,6 +1,6 @@
 const swiper = new Swiper(".swiper", {
-    slidesPerView: 4,
-    spaceBetween: 50,
+    slidesPerView: 3,
+    spaceBetween: 70,
     loop: true,
     grabCursor: true,
     centeredSlides: true,
@@ -17,17 +17,4 @@ const swiper = new Swiper(".swiper", {
         enabled: true,
         delay: 5000
     },
-    // Media
-    // breakpoints: {
-    //   // when window width is >= 320px
-    //   320: {
-    //     slidesPerView: 2,
-    //     spaceBetween: 20
-    //   },
-    //   // when window width is >= 480px
-    //   480: {
-    //     slidesPerView: 4,
-    //     spaceBetween: 30
-    //   },
-    // }
 });
