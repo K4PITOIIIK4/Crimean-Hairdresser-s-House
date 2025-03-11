@@ -1,29 +1,40 @@
-const images = document.querySelectorAll('.slider-img');
-const controlls = document.querySelectorAll('.controlls');
-let imageIndex = 0;
+/* Устанавливаем стартовый индекс слайда по умолчанию: */
+let slideIndex = 1;
+/* Вызываем функцию, которая реализована ниже: */
+showSlides(slideIndex);
 
-function show(index) {
-    images[imageIndex].classList.remove('active');
-    images[index].classList.add('active');
-    imageIndex = index;
+/* Увеличиваем индекс на 1 — показываем следующий слайд: */
+function nextSlide() {
+    showSlides(slideIndex += 1);
 }
 
-controlls.forEach((e) => {
-    e.addEventListener('click', () => {
-        if (event.target.classList.contains('prev')) {
-            let index = imageIndex - 1;
+/* Уменьшаем индекс на 1 — показываем предыдущий слайд: */
+function previousSlide() {
+    showSlides(slideIndex -= 1);
+}
 
-            if (index < 0) {
-                index = images.length - 1;
-            }
+/* Устанавливаем текущий слайд: */
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
 
-            show(index);
-        } else if (event.target.classList.contains('next')) {
-            let index = imageIndex + 1;
-            if (index >= images.length) {
-                index = 0;
-            }
-            show(index);
-        }
-    })
-})
+/* Функция перелистывания: */
+function showSlides(n) {
+    /* Обращаемся к элементам с названием класса "item", то есть к картинкам: */
+    let slides = document.getElementsByClassName("item");
+
+    /* Проверяем количество слайдов: */
+    if (n > slides.length) {
+        slideIndex = 1
+    }
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+
+    /* Проходим по каждому слайду в цикле for: */
+    for (let slide of slides) {
+        slide.style.display = "none";
+    }
+    /* Делаем элемент блочным: */
+    slides[slideIndex - 1].style.display = "block";
+}
