@@ -150,7 +150,7 @@ body {
 
 .cart-text {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 0.9vw;
     margin-right: 35px;
     margin-left: 35px;
 }
@@ -167,7 +167,7 @@ body {
 }
 
 .up-text {
-    font-size: 22px;
+    font-size: 0.9vw;
     font-weight: 600;
 }
 
