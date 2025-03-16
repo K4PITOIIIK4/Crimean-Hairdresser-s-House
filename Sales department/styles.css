@@ -206,3 +206,10 @@ body {
     margin-left: -10px;
     margin-bottom: -5px;
 }
+
+.prime-text {
+    font-weight: 800;
+    font-size: 2vw;
+    text-align: center;
+    margin-bottom: 30px;
+}

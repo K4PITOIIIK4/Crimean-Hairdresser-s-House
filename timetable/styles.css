@@ -186,3 +186,9 @@ body {
         opacity: 1
     }
 }
+
+.prime-text {
+    font-weight: 800;
+    font-size: 2vw;
+    text-align: center;
+}

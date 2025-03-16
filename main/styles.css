@@ -216,7 +216,6 @@ body {
     }
 
     .swiper-slide {
-        border-radius: 30px;
         height: 260px !important;
         transition: 0.2s;
 

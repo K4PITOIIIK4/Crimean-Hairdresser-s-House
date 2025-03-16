@@ -116,3 +116,44 @@ body {
     font-weight: 600;
 }
 
+.prime-text {
+    font-weight: 800;
+    font-size: 2vw;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.body {
+    background: rgba(255, 252, 252, 0.72);
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1vw;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.button {
+    background-color: rgb(3, 47, 99);
+    font-size: 0.8vw;
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    vertical-align: middle;
+    transition: all .2s ease;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    transition: transform .2s;
+}
