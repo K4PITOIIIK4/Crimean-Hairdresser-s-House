@@ -1,0 +1,232 @@
+body {
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    background-color: rgba(53, 0, 211, 0.10);
+    color: rgb(3, 47, 99);
+}
+.container {
+    margin: 0px 0px;
+}
+
+/* стили header */
+.header {
+    background-color: rgba(255, 252, 252, 0.72);
+    height: 90px;
+    width: 100%;
+    margin-bottom: -50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-line {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.nav-item {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    margin-right: 25px;
+    color: rgb(3, 47, 99);
+    margin-bottom: 5px;
+    transition: all .2s ease;
+}
+
+.nav-item:hover {
+    transform: scale(1.1);
+    transition: transform .2s;
+    opacity: 50;
+}
+
+.logo-item {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 280px;
+    justify-content: space-around;
+}
+
+.header-int {
+    margin-right: 50px;
+    display: grid;
+    margin-top: 10px;
+}
+
+.nav-nav {
+    display: grid;
+    text-align: center;
+}
+
+.nav {
+    text-align: center;
+    display: flex;
+}
+
+/* стили footer */
+.footer-up{
+    background: rgba(255, 252, 252, 0.72);
+    height: 250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -200px;
+}
+
+.footer-logo{
+    left: 280px;
+    margin-right: 50px;
+}
+
+.footer-menu{
+    display: grid;
+}
+
+.footer-int{
+    margin-right: 50px;
+    display: grid;
+    margin-top: 10px;
+}
+
+.footer-left{
+    display: flex;
+    margin-right: 100px;
+    left: 80px;
+}
+
+.footer-right{
+    display: flex;
+}
+
+.footer-down{
+    background: rgba(221, 221, 221, 0.5);
+    height: 20px;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.trans {
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+.top {
+    display: flex;
+    width: 80vw;
+    height: 80vh;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10vh;
+}
+
+.top ul {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.top ul li {
+    position: relative;
+    float: left;
+    width: 25%;
+    height: 25%;
+    overflow: hidden;
+}
+
+.top ul li::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    content: '';
+    color: white;
+    opacity: 0.4;
+    text-align: center;
+    box-sizing: border-box;
+    pointer-events: none;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+
+.top ul li:hover::before {
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.90);
+}
+
+.top ul li img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.lightbox {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 80%;
+    position: relative;
+    top: -100%;
+    border-radius: 30px;
+    /* Transition */
+    transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+.lightbox:target {
+    outline: none;
+    top: 0;
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 1.2s ease;
+    -moz-transition: all 1.2s ease;
+    -ms-transition: all 1.2s ease;
+    -o-transition: all 1.2s ease;
+    -webkit-transition: all 1.2s ease;
+}
+
+.lightbox:target img {
+    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
