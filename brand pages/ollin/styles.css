@@ -116,3 +116,56 @@ body {
     font-weight: 600;
 }
 
+.prime-text {
+    font-weight: 800;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.all-carts {
+    width: 80%;
+    display: grid;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.cart-line {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+.cart {
+    background: rgba(255, 252, 252, 0.72);
+    width: 600px;
+    border-radius: 30px;
+    text-align: center;
+    align-items: center;
+    margin-left: auto;
+        margin-right: auto;
+    transition: all .2s ease;
+    }
+    
+.cart:hover {
+    transform: scale(1.05);
+    transition: transform .2s;
+    }
+
+.cart-image {
+    width: 95%;
+    align-items: center;
+    border-radius: 30px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+.cart-text {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    font-weight: 600;
+    font-size: 0.9vw;
+    margin-bottom: 30px;
+}
